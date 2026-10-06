@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://the-style-edit-e-comers.vercel.app/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/accessories/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/bags/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/beauty/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/electronics/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/fashion/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/fitness/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/hair/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/home/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/jewelry/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/lingerie/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/shoes/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/skincare/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/toys/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/trending/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/temu-openwork-jacket/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/temu-shorts-3pack/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/temu-openwork-cropped-jacket/</loc><changefreq>weekly</changefreq></url>
@@ -593,5 +608,4 @@
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/aliexpress-12-constellation-luminous-keychain-glass-ball-pendant-zodiac/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/p490650830/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://the-style-edit-e-comers.vercel.app/item/p437300290/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://the-style-edit-e-comers.vercel.app/shop/</loc><changefreq>daily</changefreq></url>
 </urlset>

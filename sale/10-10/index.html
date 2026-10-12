@@ -555,10 +555,14 @@ const SALE_CONFIG = {
   end_date: "2026-10-16"       // banner: "9 OCT (8PM) - 16 OCT"
 };
 (function(){
-  document.getElementById('sale-banner').textContent = SALE_CONFIG.banner_text;
+  // Same pattern as the homepage sale banner (index.html): after the sale
+  // window ends, flip the "LIVE" claim instead of leaving it stale forever.
+  var ended = false;
+  try { ended = new Date() >= new Date('2026-10-17T00:00:00+05:00'); } catch(e){}
+  document.getElementById('sale-banner').textContent = ended ? "10.10 SALE HAS ENDED" : SALE_CONFIG.banner_text;
   var d = document.getElementById('sale-dates');
   if (SALE_CONFIG.start_date && SALE_CONFIG.end_date) {
-    d.textContent = "Sale live: " + SALE_CONFIG.start_date + " – " + SALE_CONFIG.end_date;
+    d.textContent = (ended ? "Sale ran: " : "Sale live: ") + SALE_CONFIG.start_date + " – " + SALE_CONFIG.end_date;
   }
 })();
 </script>

@@ -41,9 +41,27 @@
 .disclosure{border-top:1px solid var(--border);padding:26px 0 60px;color:var(--muted);font-size:13px;max-width:860px}
 footer{background:var(--espresso);color:#cfc6b8;text-align:center;padding:26px;font-size:13px}
 footer a{color:var(--champagne)}
+
+.hubnav{background:var(--ivory);border-bottom:1px solid var(--border);padding:13px 0;position:sticky;top:0;z-index:30}
+.hubnav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.hubnav-brand{font-size:1.02rem;letter-spacing:.3em;color:var(--espresso);text-decoration:none;font-weight:600}
+.hubnav-brand span{color:var(--champagne)}
+.hubnav-links a{color:var(--espresso);text-decoration:none;font-size:.87rem;margin-left:20px;font-weight:600}
+.hubnav-links a:hover{color:var(--sale)}
+.hubfooter{background:var(--espresso);color:var(--ivory);margin-top:20px;padding:54px 0 26px}
+.hubfooter .f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.f-brand{font-size:1.05rem;letter-spacing:.3em;color:var(--ivory);text-decoration:none;font-weight:600}
+.f-brand span{color:var(--champagne)}
+.f-intro p{font-size:.85rem;color:#c9c2b6;margin-top:12px;max-width:280px;line-height:1.6}
+.f-col h3{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--champagne);margin:0 0 12px}
+.f-col a{display:block;color:#c9c2b6;font-size:.85rem;padding:4px 0;text-decoration:none}
+.f-col a:hover{color:var(--ivory)}
+.f-fine{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:36px;padding-top:18px;border-top:1px solid #4a443e;font-size:.72rem;color:#a89f92}
+@media(max-width:700px){.hubfooter .f-grid{grid-template-columns:1fr 1fr}.hubnav-links a{margin-left:14px}}
 </style>
 </head>
 <body>
+<header class="hubnav"><div class="wrap hubnav-in"><a class="hubnav-brand" href="/">THE <span>STYLE</span> EDIT</a><nav class="hubnav-links" aria-label="Primary"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/sale/10-10/" aria-current="page">10.10 Sale</a></nav></div></header>
 <div class="topbar"><a href="/">THE STYLE EDIT</a> &nbsp;·&nbsp; Curated sale picks, verified live on Daraz</div>
 <header class="hero"><div class="wrap">
 <div class="kicker">The Style Edit · Sale Collection</div>
@@ -521,7 +539,7 @@ footer a{color:var(--champagne)}
 </div>
 <p class="disclosure"><strong>Affiliate disclosure:</strong> The Style Edit is reader-supported. When you buy through the Daraz links on this page, we may earn a commission at no extra cost to you. Prices were verified live on Daraz at curation time and may change on Daraz.</p>
 </main>
-<footer><a href="/">The Style Edit</a> · <a href="/shop/">Shop all</a></footer>
+<footer class="hubfooter"><div class="wrap"><div class="f-grid"><div class="f-intro"><a class="f-brand" href="/">THE <span>STYLE</span> EDIT</a><p>Editorial discovery shaped around useful guidance and an honest handoff to the retailer.</p></div><div class="f-col"><h3>Shop</h3><a href="/shop/">All products</a><a href="/shop/fashion/">Fashion</a><a href="/shop/beauty/">Beauty</a><a href="/shop/shoes/">Shoes</a><a href="/shop/bags/">Bags</a><a href="/shop/jewelry/">Jewelry</a></div><div class="f-col"><h3>Discover</h3><a href="/#about">About</a><a href="/#occasions">Occasions</a><a href="/sale/10-10/">10.10 Sale</a></div><div class="f-col"><h3>Trust</h3><a href="/#disclosure">Affiliate Disclosure</a><a href="/#privacy">Privacy</a><a href="/#terms">Terms</a></div></div><div class="f-fine"><span>We may earn a commission from qualifying purchases made through selected links, at no additional cost to you.</span><span>&copy; 2026 The Style Edit &middot; Independent fashion discovery</span></div></div></footer>
 <script>
 // ============================================================
 // SALE_CONFIG — THE SINGLE PLACEHOLDER FOR 10.10 DATES.

@@ -27,7 +27,7 @@ header{border-bottom:1px solid #e8e0d0;padding:18px 0}
 .product{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin:10px 0 60px}
 @media(max-width:760px){.product{grid-template-columns:1fr}}
 .gallery .main{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:#f3eee2}
-.noimg{width:100%;aspect-ratio:1;border-radius:10px;background:linear-gradient(135deg,#f3eee2,#e9dfc9);display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:Arial,Helvetica,sans-serif;font-size:.9rem;text-align:center;padding:20px}
+.noimg{width:100%;aspect-ratio:1;border-radius:10px;background:linear-gradient(135deg,#f3eee2,#e9dfc9);display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:"DM Sans",system-ui,sans-serif;font-size:.9rem;text-align:center;padding:20px}
 .info h1{font-size:1.7rem;font-weight:400;line-height:1.35;margin-bottom:10px}
 .price-note{display:inline-block;background:#f3eee2;color:var(--espresso);font-family:Arial,Helvetica,sans-serif;font-size:.95rem;padding:8px 16px;border-radius:20px;margin:14px 0}
 .specs{font-family:Arial,Helvetica,sans-serif;font-size:.92rem;margin:18px 0;border-top:1px solid #e8e0d0;border-bottom:1px solid #e8e0d0;padding:14px 0}
@@ -48,7 +48,28 @@ header{border-bottom:1px solid #e8e0d0;padding:18px 0}
 .rel-card img{width:100%;aspect-ratio:1;object-fit:cover;background:#f3eee2;display:block}
 .rel-card .rn{padding:10px 12px;font-size:.88rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 footer{border-top:1px solid #e8e0d0;padding:26px 0 40px;font-family:Arial,Helvetica,sans-serif;font-size:.85rem;color:var(--muted);text-align:center}
-footer a{color:var(--muted)}</style>
+footer a{color:var(--muted)}
+.share-row{display:flex;gap:10px;margin:12px 0 4px;flex-wrap:wrap}
+.share-btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:.9rem;padding:10px 20px;border-radius:8px;text-decoration:none;cursor:pointer;background:transparent}
+.pin-btn{border:1.5px solid var(--espresso);color:var(--espresso)}
+.pin-btn:hover{background:var(--espresso);color:var(--ivory)}
+#shareBtn{border:1.5px solid var(--muted);color:var(--muted)}
+#shareBtn:hover{border-color:var(--espresso);color:var(--espresso)}
+.price-row{display:flex;align-items:baseline;gap:12px;margin:14px 0;font-family:Arial,Helvetica,sans-serif}
+.price{font-size:1.9rem;font-weight:700}
+.was{color:var(--muted);text-decoration:line-through;font-size:1.05rem}
+.off{color:#8d4f49;font-weight:700;font-size:.9rem;letter-spacing:.04em}
+.site-footer{background:var(--espresso);color:var(--ivory);margin-top:44px;padding:56px 0 26px;font-family:Arial,Helvetica,sans-serif}
+.site-footer .f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.f-brand{font-size:1.1rem;letter-spacing:.3em;color:var(--ivory);text-decoration:none}
+.f-brand span{color:var(--champagne)}
+.f-intro p{font-size:.85rem;color:#c9c2b6;margin-top:12px;max-width:280px;line-height:1.6}
+.f-col h3{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--champagne);margin:0 0 12px;font-weight:600}
+.f-col a{display:block;color:#c9c2b6;font-size:.85rem;padding:4px 0;text-decoration:none}
+.f-col a:hover{color:var(--ivory)}
+.f-fine{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:36px;padding-top:18px;border-top:1px solid #4a443e;font-size:.72rem;color:#a89f92}
+@media(max-width:760px){.site-footer .f-grid{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="/">THE <span>STYLE</span> EDIT</a></div></header>
@@ -66,6 +87,7 @@ footer a{color:var(--muted)}</style>
 <div><b>Available on</b> Temu</div>
 </div>
 <a class="buy" href="https://temu.to/k/pekhg6h2e88" target="_blank" rel="nofollow sponsored noopener">Buy Now on Temu</a>
+<div class="share-row"><a class="share-btn pin-btn" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fthe-style-edit-e-comers.vercel.app%2Fitem%2Ftemu-1pc-elegant-gorgeous-vintage-style-brooch%2F&media=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7e5b886e-5193-445d-96cb-dc1d92039c30.jpg&description=1pc%20Elegant%20Gorgeous%20Vintage-style%20Brooch" target="_blank" rel="noopener" aria-label="Pin it on Pinterest">📌 Pin it</a><button class="share-btn" id="shareBtn" type="button" hidden>↗ Share</button></div><script>(function(){var b=document.getElementById("shareBtn");if(b&&navigator.share){b.hidden=false;b.addEventListener("click",function(){var h=document.querySelector("h1");navigator.share({title:document.title,text:h?h.textContent:"",url:location.href}).catch(function(){});});}})();</script>
 <p class="disclosure">Affiliate disclosure: The Style Edit may earn a commission when you purchase through links on this page, at no extra cost to you. Check the live Temu listing for the current price, colours and availability.</p>
 </div>
 </main>
@@ -85,6 +107,6 @@ footer a{color:var(--muted)}</style>
 </div>
 </section>
 </div>
-<footer><div class="wrap">&copy; 2026 The Style Edit &middot; <a href="/">Home</a> &middot; <a href="/shop/">Shop</a> &middot; Curated women's fashion finds &amp; style inspiration</div></footer>
+<footer class="site-footer"><div class="wrap"><div class="f-grid"><div class="f-intro"><a class="f-brand" href="/">THE <span>STYLE</span> EDIT</a><p>Editorial discovery shaped around useful guidance and an honest handoff to the retailer.</p></div><div class="f-col"><h3>Shop</h3><a href="/shop/">All products</a><a href="/shop/fashion/">Fashion</a><a href="/shop/beauty/">Beauty</a><a href="/shop/shoes/">Shoes</a><a href="/shop/bags/">Bags</a><a href="/shop/jewelry/">Jewelry</a></div><div class="f-col"><h3>Discover</h3><a href="/#about">About</a><a href="/#occasions">Occasions</a><a href="/sale/10-10/">10.10 Sale</a></div><div class="f-col"><h3>Trust</h3><a href="/#disclosure">Affiliate Disclosure</a><a href="/#privacy">Privacy</a><a href="/#terms">Terms</a></div></div><div class="f-fine"><span>We may earn a commission from qualifying purchases made through selected links, at no additional cost to you.</span><span>&copy; 2026 The Style Edit &middot; Independent fashion discovery</span></div></div></footer>
 </body>
 </html>
